@@ -1,0 +1,46 @@
+.header {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  font-size: var(--f4);
+}
+
+.header__container {
+  width: 100%;
+  max-width: var(--w7);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header__item {
+  padding: var(--sl10);
+}
+
+.item-1 {
+  flex-grow: 1;
+  font-size: var(--fs14);
+  font-weight: var(--fw9);
+}
+
+.item-2 b {
+  font-size: var(--fs14);
+  font-weight: var(--fw9);
+}
+
+.item-2 b span {
+  color: var(--c3);
+}
+
+.item-3 p {
+  font-size: var(--fs14);
+  font-weight: var(--fw4);
+}
+
+.item-1 svg {
+  transition: all 1s;
+}
+
+.item-1 svg:hover {
+  animation: rotate 1s infinite linear;
+}

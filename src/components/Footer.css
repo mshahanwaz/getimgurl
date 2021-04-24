@@ -1,0 +1,32 @@
+.footer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.footer__container {
+  width: 100%;
+  max-width: var(--w7);
+  display: flex;
+  justify-content: flex-end;
+  padding: var(--sl10) 0;
+}
+
+.footer__text {
+  margin-top: var(--sl2);
+  font-size: var(--fs13);
+  font-weight: var(--fw9);
+}
+
+.footer__icon {
+  margin: 0 var(--sl10);
+  font-size: var(--fs13);
+  font-weight: var(--fw9);
+}
+
+.footer__text p span {
+  color: var(--c3);
+}

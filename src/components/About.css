@@ -1,0 +1,62 @@
+.about {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.about__container {
+  width: 100%;
+  max-width: var(--w7);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.about__img {
+  padding: var(--sl10);
+  border: var(--sl5) solid var(--c3);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  margin: var(--sl20) 0;
+}
+
+.about__img img {
+  width: 300px;
+  object-fit: contain;
+  border-radius: 50%;
+}
+
+.about__skills {
+  display: flex;
+  padding: var(--sl10) 0;
+}
+
+.about__skill {
+  margin: var(--sl3);
+  padding: var(--sl5) var(--sl10);
+  border: none;
+  color: var(--c2);
+  background-color: var(--c1);
+  border-radius: var(--br6);
+  font-size: var(--fs1);
+}
+
+.about__social {
+  display: flex;
+  justify-content: center;
+}
+
+.about__icon {
+  padding: var(--sl10) var(--sl20);
+}
+
+.about__icon svg {
+  width: var(--fs15);
+  height: var(--fs15);
+}

@@ -1,38 +1,143 @@
-.App {
-  text-align: center;
+@import url("https://fonts.googleapis.com/css2?family=Cuprum:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap");
+
+* {
+  margin: 0;
+  box-sizing: border-box;
+  font-family: var(--font);
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+:root {
+  --font: "Cuprum", sans-serif;
+
+  /* span length */
+  --sl1: 1px;
+  --sl2: 2px;
+  --sl3: 3px;
+  --sl4: 4px;
+  --sl5: 5px;
+  --sl6: 6px;
+  --sl7: 7px;
+  --sl8: 8px;
+  --sl9: 9px;
+  --sl10: 10px;
+  --sl11: 11px;
+  --sl12: 12px;
+  --sl13: 13px;
+  --sl14: 14px;
+  --sl15: 15px;
+  --sl16: 16px;
+  --sl17: 17px;
+  --sl18: 18px;
+  --sl19: 19px;
+  --sl20: 20px;
+  --sl21: 21px;
+  --sl22: 22px;
+  --sl23: 23px;
+  --sl24: 24px;
+  --sl25: 25px;
+  --sl26: 26px;
+  --sl27: 27px;
+  --sl28: 28px;
+  --sl29: 29px;
+  --sl30: 30px;
+  --sl35: 35px;
+  --sl40: 40px;
+  --sl45: 45px;
+  --sl50: 50px;
+  --sl55: 55px;
+  --sl60: 60px;
+  --sl65: 65px;
+  --sl70: 70px;
+  --sl75: 75px;
+  --sl80: 80px;
+  --sl85: 85px;
+  --sl90: 90px;
+  --sl95: 95px;
+  --sl100: 100px;
+  /* font weight */
+  --fw4: 400;
+  --fw5: 500;
+  --fw6: 600;
+  --fw7: 700;
+  --fw8: 800;
+  --fw9: 900;
+
+  /* font size */
+  --fs1: 1rem;
+  --fs11: 1.1rem;
+  --fs12: 1.2rem;
+  --fs13: 1.3rem;
+  --fs14: 1.4rem;
+  --fs15: 1.5rem;
+  --fs16: 1.6rem;
+  --fs17: 1.7rem;
+  --fs18: 1.8rem;
+  --fs19: 1.9rem;
+  --fs2: 2rem;
+  --fs21: 2.1rem;
+  --fs22: 2.2rem;
+  --fs23: 2.3rem;
+  --fs24: 2.4rem;
+  --fs25: 2.5rem;
+  --fs26: 2.6rem;
+  --fs27: 2.7rem;
+  --fs28: 2.8rem;
+  --fs29: 2.9rem;
+  --fs3: 3rem;
+  --fs35: 3.5rem;
+  --fs4: 4rem;
+  --fs45: 45rem;
+  --fs5: 5rem;
+
+  /* color palette */
+  --c1: #252525;
+  --c2: #fff;
+  --c3: #00f;
+  --c4: #5c5c5c;
+  --c5: #f0f0f0;
+
+  /* width */
+  --w4: 400px;
+  --w7: 700px;
+  --w10: 1000px;
+
+  /* border radius */
+  --br3: 3px;
+  --br4: 4px;
+  --br5: 5px;
+  --br6: 6px;
+  --br7: 7px;
+  --br8: 8px;
+  --br9: 9px;
+  --br10: 10px;
+  --br15: 15px;
+  --br20: 20px;
+  --br30: 30px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.app {
+  height: 100vh;
+  /* background-color: aqua; */
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+a {
+  text-decoration: none;
+  color: unset;
 }
 
-.App-link {
-  color: #61dafb;
+button {
+  padding: var(--sl5) var(--sl10);
+  border: none;
+  color: var(--c2);
+  background-color: var(--c1);
+  border-radius: var(--br6);
+  font-size: var(--fs12);
+  cursor: pointer;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+button:hover {
+}
+
+::-webkit-scrollbar {
+  display: none;
 }
