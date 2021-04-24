@@ -8,20 +8,22 @@ function GetURL() {
   const [URL, setURL] = useState("");
 
   const handleUpload = () => {
-    const upload = storage.ref(`images/${image.name}`).put(image);
-    upload.on(
-      "state_changed",
-      () => {},
-      (error) => alert(error.message),
-      () => {
-        storage
-          .ref("images")
-          .child(image.name)
-          .getDownloadURL()
-          .then((url) => setURL(url));
-      }
-    );
-    setSelect(1);
+    if (image) {
+      const upload = storage.ref(`images/${image.name}`).put(image);
+      upload.on(
+        "state_changed",
+        () => {},
+        (error) => alert(error.message),
+        () => {
+          storage
+            .ref("images")
+            .child(image.name)
+            .getDownloadURL()
+            .then((url) => setURL(url));
+        }
+      );
+      setSelect(1);
+    }
   };
 
   const handleCopy = () => {
@@ -51,7 +53,7 @@ function GetURL() {
         {!select && (
           <div className="geturl__select">
             <label htmlFor="geturl__input">
-              {image ? image.name : "Tap to select"}
+              {image ? image.name : "Tap to select an image"}
             </label>
             <input
               type="file"

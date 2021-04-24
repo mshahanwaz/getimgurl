@@ -1,6 +1,7 @@
 import firebase from "firebase/app";
 import "firebase/storage";
 
+// eslint-disable-next-line
 const firebaseApp = firebase.initializeApp({
   apiKey: "AIzaSyAsivwM_woRD3qPpnf0QfLCRKQte2iRLTM",
   authDomain: "getimgurl.firebaseapp.com",

@@ -22,6 +22,8 @@
   padding: var(--sl5);
   width: 100%;
   margin-bottom: var(--sl20);
+  display: flex;
+  justify-content: center;
 }
 
 .geturl__select input {
@@ -32,11 +34,11 @@
   display: block;
   border: var(--sl2) dashed var(--c4);
   border-radius: var(--sl10);
-  width: 100%;
+  width: fit-content;
   cursor: pointer;
-  padding: var(--sl50) 0;
+  padding: var(--sl50) var(--sl20);
   text-align: center;
-  font-size: var(--fs2);
+  font-size: var(--fs12);
   font-weight: var(--fw4);
   color: var(--c4);
   background-color: var(--c5);
