@@ -1,3 +1,3 @@
 # img_url
 
-Live on : [here](https://img_url.web.app)
+Live on : [here](https://getimgurl.web.app)
